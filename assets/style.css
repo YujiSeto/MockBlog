@@ -1,0 +1,125 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  color: #ffffff; /* Main text color white */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+/* Main title */
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #ffffff; /* White title */
+  text-shadow: 0 0 5px #ffffff88; /* subtle glow */
+}
+
+/* Fieldset and legend - centered with white text */
+fieldset {
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  background-color: #1e1e1e;
+  max-width: 600px;
+  color: #ffffff;
+}
+
+legend {
+  padding: 0 10px;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+/* Inputs and textarea */
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 6px;
+  margin-top: 0.5rem;
+  background-color: #2c2c2c;
+  color: #ffffff; /* white input text */
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+  transition: background-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+  background-color: #3a3a3a;
+  box-shadow: 0 0 8px #ffffffaa; /* white glow */
+}
+
+/* Button */
+button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #ffffff; /* white button background */
+  color: #121212; /* dark text on button */
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  display: block;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #cccccc; /* lighter gray on hover */
+}
+
+/* Posts container */
+.posts {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Each post */
+.posts > div {
+  background-color: #1e1e1e;
+  padding: 1.2rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000000aa;
+  transition: transform 0.2s ease;
+}
+
+.posts > div:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px #ffffff33; /* subtle white glow on hover */
+}
+
+/* Post title */
+.posts > div h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff; /* white titles */
+  font-weight: 700;
+}
+
+/* Post body */
+.posts > div p,
+.posts > div :not(h1) {
+  color: #ddd; /* light gray body text */
+  font-size: 1rem;
+  white-space: pre-wrap; /* preserve line breaks */
+}
